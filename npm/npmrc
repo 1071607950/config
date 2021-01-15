@@ -1,0 +1,2 @@
+prefix=${NODE_PATH}\node_global
+cache=${NODE_PATH}\node_cache
