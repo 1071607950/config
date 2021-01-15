@@ -159,14 +159,14 @@ under the License.
       <!-- 腾讯云镜像 -->
       <mirror>
           <id>nexus-tencentyun</id>
-          <mirrorOf>*</mirrorOf>
+          <mirrorOf>central</mirrorOf>
           <name>Nexus tencentyun</name>
           <url>http://mirrors.cloud.tencent.com/nexus/repository/maven-public/</url>
       </mirror>
       <!-- 网易镜像 -->
       <mirror>
           <id>nexus-163</id>
-          <mirrorOf>*</mirrorOf>
+          <mirrorOf>central</mirrorOf>
           <name>Nexus 163</name>
           <url>http://mirrors.163.com/maven/repository/maven-public/</url>
       </mirror>
@@ -174,14 +174,14 @@ under the License.
       <mirror>
           <id>alimaven</id>
           <name>aliyun maven</name>
-          <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+          <url>https://maven.aliyun.com/repository/public/</url>
           <mirrorOf>central</mirrorOf>
       </mirror>
       <!-- 华为云镜像 -->
       <mirror>
           <id>huaweicloud</id>
           <name>huaweicloud maven</name>
-          <mirrorOf>*</mirrorOf>
+          <mirrorOf>central</mirrorOf>
           <url>https://mirrors.huaweicloud.com/repository/maven/</url>
       </mirror>
       <!-- 中央仓库1 -->
