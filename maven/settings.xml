@@ -158,7 +158,7 @@ under the License.
      -->
 	<!-- 腾讯云镜像 -->
 	<mirror>
-	<id>nexus-tencentyun</id>
+		<id>nexus-tencentyun</id>
 		<mirrorOf>central</mirrorOf>
 		<name>Nexus tencentyun</name>
 		<url>http://mirrors.cloud.tencent.com/nexus/repository/maven-public/</url>
