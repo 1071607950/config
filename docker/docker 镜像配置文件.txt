@@ -1,15 +1,20 @@
 //mysql 配置
 docker run -p 3306:3306 \
---name mysql5.7.33 \
--v /usr/local/docker/mysql/conf:/etc/mysql/conf.d \
+--name mysql \
+-v /usr/local/docker/mysql/conf:/etc/mysql \
 -v /usr/local/docker/mysql/logs:/var/log/mysql \
 -v /usr/local/docker/mysql/data:/var/lib/mysql \
 -e MYSQL_ROOT_PASSWORD=root \
--d mysql:5.7.33 
+-d mysql:5.7.33
 my.cnf 配置
 [mysqld]
-character-set-server=utf8mb4
+init_connect='SET collation_connection = utf8_unicode_ci'
+init_connect='SET NAMES utf8'
+character-set-server=utf8
+collation-server=utf8_unicode_ci
+skip-character-set-client-handshake
+skip-name-resolve
 [client]
-default-character-set=utf8mb4
+default-character-set=utf8
 [mysql]
-default-character-set=utf8mb4
+default-character-set=utf8
